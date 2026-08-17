@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarNombre()">
+        Mostrar Nombre
+    </button>
+
+    <br><br>
+
+    <p id="parrafo"></p>
+
+    <button onclick="actualizarTexto()">
+        Actualizar Texto
+    </button>
+
+    <script>
+        console.log("La página se cargó correctamente");
+
+        function mostrarNombre() {
+            alert("Abigail Gonzalez");
+        }
+
+        function actualizarTexto() {
+            document.getElementById("parrafo").innerHTML =
+                "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
